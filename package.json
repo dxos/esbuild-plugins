@@ -5,7 +5,8 @@
         "watch": "ultra -r watch",
         "publ": "yarn changeset version && yarn changeset publish",
         "build": "ultra --build -r build",
-        "release": "yarn build && changeset publish"
+        "release": "yarn build && changeset publish",
+        "install": "yarn install --ignore-scripts && yarn build"
     },
     "workspaces": {
         "packages": [

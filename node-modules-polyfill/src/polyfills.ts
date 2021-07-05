@@ -24,7 +24,7 @@ export function builtinsPolyfills() {
     libs.set('sys', libs.get('util'))
     libs.set(
         'events',
-        require.resolve('rollup-plugin-node-polyfills/polyfills/events'),
+        require.resolve('rollup-plugin-polyfill-node/polyfills/events'), // DIFFERENT THAN THE REST - because of missing .off polyfill.
     )
     libs.set(
         'stream',
